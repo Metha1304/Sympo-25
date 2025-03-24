@@ -1,0 +1,105 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(sympo_bg.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+iframe {
+    max-width: 100%;
+    border: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    iframe {
+        height: 1500px; /* Adjust height for smaller devices */
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    iframe {
+        height: 1200px;
+    }
+
+    button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 1000px;
+    }
+
+    button {
+        font-size: 0.7rem;
+        padding: 5px 10px;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(sympo_bg.jpg);
+}
+
+h1, h5 {
+    text-align: center;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    font-family: "Handlee", cursive;
+    font-weight: 900;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #5086f8;
+}
+
+/* Burger Menu */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Body Content */
+.body-content {
+    text-align: center;
+    padding: 40px;
+  
+    margin-top: 20px;
+}
+
+.body-content h1 {
+    font-size: 100px;
+    font-family: "poppins";
+    color: white;
+    font-weight: 200;
+}
+
+.body-content h5 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 100;
+}
+
+.body-content p {
+    font-size: 1rem;
+    color: white;
+    margin: 10px 0;
+    font-weight: 200;
+}
+
+.body-content .buttons {
+    margin-top: 20px;
+}
+
+.body-content button{
+    padding: 20px;
+    margin:10px;
+    background-color: #007BFF;
+    color:white;
+    border-radius: 30px;
+    font-family: "poppins";
+    font-size: 15px;
+    font-weight: 400;
+}
+.body-content button a {
+    text-decoration: none;
+    color: white;
+}
+
+.body-content button:hover{
+    /* Apply box shadow on all sides */
+
+     color:white;
+     background-color: #0056b3;
+
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+   
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .body-content h1 {
+        font-size: 2rem;
+    }
+
+    .body-content h5 {
+        font-size: 1.2rem;
+    }
+
+    .body-content button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .body-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .body-content h5 {
+        font-size: 1rem;
+    }
+
+    .body-content button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+
+    footer h4 {
+        font-size: 0.8rem;
+    }
+}

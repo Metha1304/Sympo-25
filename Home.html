@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Categories</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Event Categories</h1>
+        <div class="buttons">
+            <button onclick="showEvents('all')">All Events</button>
+            <button onclick="showEvents('tech')">Tech Events</button>
+            <button onclick="showEvents('nontech')">Non-Tech Events</button>
+        </div>
+
+        <div id="events">
+            <div id="all-events" class="event-div">
+                <h2>All Events</h2>
+                <ul>
+                    <li>Hackathon</li>
+                    <li>Code Wars</li>
+                    <li>Robotics</li>
+                    <li>Cultural Fest</li>
+                    <li>Quiz Competition</li>
+                </ul>
+            </div>
+
+            <div id="tech-events" class="event-div">
+                <h2>Tech Events</h2>
+                <ul>
+                    <li>Hackathon</li>
+                    <li>Code Wars</li>
+                    <li>Robotics</li>
+                </ul>
+            </div>
+
+            <div id="nontech-events" class="event-div">
+                <h2>Non-Tech Events</h2>
+                <ul>
+                    <li>Cultural Fest</li>
+                    <li>Quiz Competition</li>
+                    <li>Debate</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+   
+    <script src="Home.js"></script>
+</body>
+</html>
